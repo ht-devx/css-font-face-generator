@@ -1,0 +1,142 @@
+<!-----------------------------------------------------------------
+
+        CSS @font-face generator
+        Designed and developed by HT / @ht-devx
+         __  __     ______      ______   ______     __    
+        /\ \_\ \   /\__  _\    /\__  _\ /\  __ \   /\ \   
+        \ \  __ \  \/_/\ \/    \/_/\ \/ \ \  __ \  \ \ \  
+         \ \_\ \_\    \ \_\       \ \_\  \ \_\ \_\  \ \_\ 
+          \/_/\/_/     \/_/        \/_/   \/_/\/_/   \/_/ 
+          
+        INITIAL REL.: 2024-04-02
+        LAST UPDT.: 2024-04-02
+
+------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>CSS @font-face generator</title>
+<link rel="shortcut icon" href="./favicon.png">
+<meta name="description" content="CSS @font-face generator by @ht-devx">
+<meta name="keywords" content="css font face,css fontface,css @font-face,font face generator,font-face generator,css font face generator,css font-face generator">
+<meta name="author" content="glenthemes">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://unpkg.com/@phosphor-icons/web@latest/src/bold/style.css" rel="stylesheet" crossorigin>
+<script src="https://popify.gitlab.io/i/popup.js"></script>
+<link href="./css/vars.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+<script src="./script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <h2>CSS <span>@</span>font-face generator</h2>
+            
+            <p>
+            Welcome! Feel free to <button class="autofill" type="button">autofill this form</button> to get an idea of how it works.
+            </p>
+            
+            <p>
+            Only the <b>font name</b> and <b>font file URL</b> are needed. Everything else is optional!
+            </p>
+            
+            <form>
+                <!---- FONT NAME ---->
+                <div class="group row req">
+                    <label for="fontName">Font name:</label>
+                    <input id="fontName" type="text" name="fontName" placeholder="e.g.: Instrument Sans" required>
+                </div>
+    
+                <!---- FONT WEIGHT ---->
+                <div class="group row">
+                    <label for="fontWeight">Font weight:</label>
+                    <input id="fontWeight" type="number" name="fontWeight" placeholder="400" step="10" min="100" max="1000">
+                </div>
+                
+                <!---- FONT STYLE ---->
+                <div class="group row">
+                    <label for="fontStyle">Font style:</label>
+                    <select id="fontStyle" name="fontStyle">
+                        <option value="auto" selected disabled>Choose its style...</option>
+                        <option value="normal">normal</option>
+                        <option value="italic">italic</option>
+                    </select>
+                </div>
+                
+                <!---- FONT LOAD STYLE ---->
+                <div class="group row">
+                    <label for="loadStyle">Font load style:</label>
+                    <select id="loadStyle" name="loadStyle">
+                        <option value="auto" selected disabled>Choose how it loads...</option>
+                        <option value="block">hide the text until font has fully loaded</option>
+                        <option value="swap">use the fallback font until font has fully loaded</option>
+                        <option value="fallback">use the fallback font very briefly, then switch the font</option>
+                        <option value="optional">use the browser's recomendation based on the user's internet speed</option>
+                    </select>
+                </div>
+    
+                <!---- FONT FILE URL ---->
+                <div class="group row req">
+                    <label for="fontURL">Font file URL:</label>
+                    <input id="fontURL" type="url" name="fontURL" placeholder=".ttf, .otf, .woff, .woff2" required>
+                </div>
+    
+                <!---- SUBMIT BUTTON ---->
+                <div class="btn-area">
+                    <button type="submit">Go</button>
+                    <span class="or">or</span>
+                    <button type="reset">reset</button>
+                </div>
+                
+                <!---- RESULTS AREA ---->
+                <div class="results-area">
+                    <div class="x">
+                        <pre class="y"></pre>
+                    </div>
+                </div>
+    
+            </form>
+        </div><!--inner-->
+    </div><!--container-->
+    
+    <div class="crd">
+        <button>
+            <i class="ph-bold ph-gear-six"></i>
+        </button>
+    </div>
+    
+    <div class="popup" hidden>
+        <div class="popup-box">
+            <h5>Credits & Resources used:</h5>
+            <ul>
+                <li>{ font } <b>Instrument Sans</b> by Rodrigo Fuenzalida & Jordan Egstad</li>
+                <li>{ font } <b>Wanted Sans</b> by wanteddev</li>
+                <li>{ font } <b>Maison Neue Mono</b> by Milieu Grotesque</li>
+                <li><b>Phosphor Icons</b> by Helena Zhang and Tobias Fried</li>
+                <li>favicon by Ilham Fitrotul Hayat [<a href="https://www.flaticon.com/free-icon/arroba_3059486">x</a>]</li>
+            </ul>
+            
+            <button class="close-popup">
+                <i class="ph-bold ph-x"></i>
+            </button>
+        </div>
+    </div>
+    
+    <div class="ht">
+        <div class="ht-i">
+            <a href="https://github.com/ht.devx">
+                <span>@&hairsp;ht<span class="dash">-</span>devx</span>
+                <i class="ph-bold ph-heart"></i>
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
